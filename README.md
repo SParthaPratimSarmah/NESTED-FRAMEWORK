@@ -35,7 +35,7 @@ A **Discrete-Event Simulation (DES)** framework for studying distributed UAV (Un
 ├── Gravity.ipynb                  # Gravity-based UAV placement notebook
 ├── Sensivity_Analysis.ipynb       # Parameter sensitivity analysis notebook
 └── Main.py                        # Simulation entry point
-
+```
 
 
 
@@ -56,7 +56,7 @@ This project simulates a **multi-UAV wireless network** deployed over a 2D field
 ---
 
 ## Configuration
-
+```
 All parameters are set in `config/Configuration.py`. Key parameters:
 
 | Parameter | Default | Description |
@@ -75,7 +75,7 @@ All parameters are set in `config/Configuration.py`. Key parameters:
 | `WE_COVERAGE` | 0.70 | Weight for coverage score |
 | `WE_HOTSPOT` | 0.30 | Weight for hotspot score |
 | `BETA` | 0.3 | Neighbor influence weight |
-
+```
 ### Selecting a Dataset
 
 Edit `USER_MOBILITY_FILE` in `Configuration.py` to choose a scenario:
@@ -100,18 +100,18 @@ USER_MOBILITY_FILE = r"path/to/Coverage_recover_and_degradation_analysis_40km.cs
 USER_MOBILITY_FILE = r"path/to/Original_Dataset.csv"
 ```
 
----
+
 
 
 ### Requirements
 
-```bash
+```
 pip install simpy numpy networkx matplotlib pandas
 ```
 
 ### Running the Simulation
 
-```bash
+```
 python Main.py
 ```
 
@@ -127,7 +127,7 @@ Enter 1,3,5     : Specific iterations (comma-separated)
 ---
 
 ## Output Files
-
+'''
 All outputs are saved to the `results/` directory:
 
 | File | Description |
@@ -143,6 +143,8 @@ All outputs are saved to the `results/` directory:
 
 Animations are saved to `visualizations/`:
 - `simulation_animation.gif`
+
+  '''
 
 ---
 
