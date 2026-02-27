@@ -47,7 +47,7 @@ This project simulates a **multi-UAV wireless network** deployed over a 2D field
 
 - **Distributed Decision-Making** — No central controller; each UAV computes its own movement scores using local coverage maps and neighbor exchanges
 - **SimPy Discrete-Event Simulation** — UAV agents run as concurrent SimPy processes synchronized via an AllOf barrier
-- **Realistic Energy Model** — Hovering power, kinetic (flight) power, and radio communication power modeled from published parameters (Table 6)
+- **Realistic Energy Model** — Hovering power, kinetic (flight) power, and radio communication power modeled from published parameters.
 - **Stochastic & Energy Failures** — UAVs can fail randomly (system malfunction) or die from battery depletion
 - **Dynamic UAV Addition** — Checkpoint process detects coverage drops or network fragmentation and deploys replacement UAVs using a gravity-based grid search
 - **User Mobility** — Ground users follow real mobility traces loaded from CSV datasets
@@ -61,20 +61,20 @@ All parameters are set in `config/Configuration.py`. Key parameters:
 
 | Parameter | Default | Description |
 |---|---|---|
-| `FIELD_SIZE` | 30,000 m | Simulation field (30 × 30 km²) |
-| `NO_UAV` | 5 | Initial number of UAVs |
-| `UAV_HEIGHT` | 1,500 m | Fixed flight altitude |
-| `NO_PEOPLE` | 200 | Number of ground users |
-| `SIM_DURATION` | 75 | Simulation time steps |
-| `NUM_SIMULATION_RUNS` | 50 | Monte Carlo iterations |
-| `ACCESS_LINK_RANGE` | 3,300 m | UAV-to-user link range |
-| `BACKHAUL_LINK_RANGE` | 8,200 m | UAV-to-UAV link range |
-| `MAX_BATTERY_ENERGY` | 125,000 J | Full battery capacity (≈ 34.7 Wh) |
-| `STOCHASTIC_FAILURE_THRESHOLD` | 0.001 | Probability of random failure per check |
-| `COVERAGE_THRESHOLD` | 80% | Minimum coverage before adding a UAV |
-| `WE_COVERAGE` | 0.70 | Weight for coverage score |
-| `WE_HOTSPOT` | 0.30 | Weight for hotspot score |
-| `BETA` | 0.3 | Neighbor influence weight |
+| FIELD_SIZE | 30,000 m | Simulation field (30 × 30 km²) |
+| NO_UAV | 5 | Initial number of UAVs |
+| UAV_HEIGHT | 1,500 m | Fixed flight altitude |
+| NO_PEOPLE | 200 | Number of ground users |
+| SIM_DURATION | 75 | Simulation time steps |
+| NUM_SIMULATION_RUNS | 50 | Monte Carlo iterations |
+| ACCESS_LINK_RANGE | 3,300 m | UAV-to-user link range |
+| BACKHAUL_LINK_RANGE` | 8,200 m | UAV-to-UAV link range |
+| MAX_BATTERY_ENERGY | 125,000 J | Full battery capacity (≈ 34.7 Wh) |
+| STOCHASTIC_FAILURE_THRESHOLD | 0.001 | Probability of random failure per check |
+| COVERAGE_THRESHOLD | 80% | Minimum coverage before adding a UAV |
+| WE_COVERAGE | 0.70 | Weight for coverage score |
+| WE_HOTSPOT | 0.30 | Weight for hotspot score |
+| BETA | 0.3 | Neighbor influence weight |
 ```
 ### Selecting a Dataset
 
