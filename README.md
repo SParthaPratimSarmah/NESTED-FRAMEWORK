@@ -127,25 +127,25 @@ Enter 1,3,5     : Specific iterations (comma-separated)
 ---
 
 ## Output Files
-'''
+```
 All outputs are saved to the `results/` directory:
 
 | File | Description |
 |---|---|
-| `simulation_results_<timestamp>.csv` | Per-timestep: UAVs, failures, coverage, network efficiency, components |
-| `energy_consumption_<timestamp>.csv` | Per-UAV per-timestep energy breakdown |
-| `message_passing_<timestamp>.csv` | Detailed log of every inter-UAV message |
-| `message_statistics_<timestamp>.csv` | Aggregated message counts per timestep |
-| `death_events_<timestamp>.csv` | UAV death log (cause, energy, neighbors notified) |
-| `stochastic_failures_<timestamp>.csv` | Random failure draw log |
-| `energy_summary_iter<N>.txt` | Per-UAV energy summary for each iteration |
-| `simulation_summary_iter<N>.txt` | Simulation configuration & average metrics |
+| simulation_results_<timestamp>.csv | Per-timestep: UAVs, failures, coverage, network efficiency, components |
+| energy_consumption_<timestamp>.csv | Per-UAV per-timestep energy breakdown |
+| message_passing_<timestamp>.csv | Detailed log of every inter-UAV message |
+| message_statistics_<timestamp>.csv | Aggregated message counts per timestep |
+| death_events_<timestamp>.csv| UAV death log (cause, energy, neighbors notified) |
+| stochastic_failures_<timestamp>.csv | Random failure draw log |
+| energy_summary_iter<N>.txt | Per-UAV energy summary for each iteration |
+| simulation_summary_iter<N>.txt | Simulation configuration & average metrics |
 
 Animations are saved to `visualizations/`:
-- `simulation_animation.gif`
+- **simulation_animation.gif**
 
-  '''
+```
 
----
+
 
 
